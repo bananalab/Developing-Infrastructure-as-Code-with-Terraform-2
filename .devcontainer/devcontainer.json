@@ -1,0 +1,25 @@
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "amazonwebservices.aws-toolkit-vscode",
+                "Bridgecrew.checkov",
+                "hashicorp.hcl",
+                "hashicorp.terraform",
+                "hashicorp.sentinel",
+                "ms-kubernetes-tools.vscode-kubernetes-tools",
+                "ms-vscode.makefile-tools",
+                "ms-vscode.vscode-node-azure-pack",
+                "eamodio.gitlens"
+            ],
+            "settings": {
+                "editor.formatOnSave": true
+            }
+        }
+    },
+    "image": "bananalab/devcontainer:98a8931",
+    "mounts": [
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ],
+    "remoteUser": "devcontainer"
+}
